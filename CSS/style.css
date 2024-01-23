@@ -2,17 +2,6 @@ body {
   margin: 0;
   background: linear-gradient(to bottom, bisque, beige);
 }
-body #pagetop {
-  -webkit-text-fill-color: #6c6a01;
-  position: sticky;
-  display: block;
-  padding: 0;
-  height: 56px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 0%;
-}
 body h1 {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -39,6 +28,9 @@ body h4 {
   color: #c98cd2;
   font-size: 50px;
 }
+body .imagenes-danza {
+  text-align: center;
+}
 body p {
   text-align: left;
   color: rgb(205, 127, 205);
@@ -50,33 +42,6 @@ body a {
   text-decoration: none;
   text-align: center;
 }
-body #navmenu {
-  position: sticky;
-  background-color: #282A35;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 1px;
-  font-family: "Source Sans Pro Topnav", sans-serif;
-  text-decoration: none;
-  top: 56px;
-  z-index: 2;
-  width: 100%;
-  white-space: nowrap;
-  overflow: auto;
-  scrollbar-width: none;
-}
-body #navmenu a {
-  display: inline-block;
-  padding: 5px 15px 5px 15px;
-  width: auto;
-  font-size: 15px;
-  line-height: 1.5;
-}
-body video {
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
 
 header {
   background-color: rgb(238, 238, 238);
@@ -87,6 +52,11 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
+}
+header #pagetop {
+  -webkit-text-fill-color: #6c6a01;
+  margin-top: 0%;
 }
 
 section {
@@ -118,6 +88,35 @@ footer {
 }
 footer #mayusculas {
   text-transform: uppercase;
+}
+
+#navmenu {
+  position: sticky;
+  padding: 5px 15px 5px 15px;
+  margin: 0;
+  top: 56px;
+  background-color: #282A35;
+  font-family: "Source Sans Pro Topnav", sans-serif;
+  word-spacing: 15px;
+  text-decoration: none;
+  height: 2.2rem;
+  width: 100%;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  z-index: 2;
+}
+#navmenu #navmenu a {
+  display: inline-block;
+  line-height: 1.5;
+}
+#navmenu :hover {
+  background-color: black;
+  padding: 7px 7px 7px 7px;
+  opacity: 1;
+}
+#navmenu :active {
+  background-color: #04aa6d;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

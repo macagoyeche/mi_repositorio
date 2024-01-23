@@ -7,8 +7,10 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-
-    &:hover{
-
+    z-index: 2;
+        
+    #pagetop {
+        -webkit-text-fill-color: #6c6a01;
+        margin-top: 0%;
     }
 }
