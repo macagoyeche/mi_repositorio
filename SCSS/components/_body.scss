@@ -1,51 +1,47 @@
+$color-fuente:#c98cd2;
+@mixin texto($text-align,$font-family,$color,$font-size){
+    text-align: $text-align;
+    font-family: $font-family;
+    color: $color;
+    font-size: $font-size;
+}
+
 body{
     margin: 0;
     background: linear-gradient(to bottom,  bisque, beige);
 
     h1{
-        text-align:center ;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 50px;
-        color: rgba(201,140,210,255)  ;
+        @include texto(center, 'cursive', $color-fuente,50px);
         background-color:beige;
         font-weight: 100;
         margin-top: 0%;
     }
     h2{
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color:#e083a2;
         
+        @include texto(center,'Trebuchet MS' 'Lucida Sans Unicode' 'Lucida Grande' 'Lucida Sans' 'Arial' 'sans-serif', $color-fuente,40px);
     }
     h3{
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 30px;
-        color: blueviolet;
+        @include texto(center, Arial,blueviolet,30px);
     }
     h4{
-    
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #c98cd2;
-        font-size: 50px;
+        @include texto(center, 'Cambria' 'Cochin' 'Georgia' 'Times' 'Times New Roman' 'serif', $color-fuente,50px);  
     }
     .imagenes-danza{
+        
+        text-align: center;
+    }
+
+    .link-anuncio{
 
         text-align: center;
-    }
+        font-size: 35px;
+    }  
+
     p{
-        text-align: left;
-        color: rgb(205, 127, 205);
-        font-style: italic;
-        
+        @include texto(left,italic, $color-fuente,20px);  
     }
-    
     a{
-        color: #ffb1a5;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        @include texto(center,'Cambria' 'Cochin' 'Georgia' 'Times' 'Times New Roman' 'serif',#ffb1a5,30px);  
         text-decoration: none;
-        text-align: center;
-    
     }
 }

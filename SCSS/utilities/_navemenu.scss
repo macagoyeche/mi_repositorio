@@ -13,12 +13,21 @@
         letter-spacing: 1px;
         white-space:nowrap;
         z-index: 2;
-   
+    
+    .ga-nav{
+
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        color: #c98cd2;
+
+    }
+
     #navmenu a{
 
         display: inline-block;
         line-height: 1.5;
     }
+        
     :hover{
         background-color: black;
         padding: 7px 7px 7px 7px;
