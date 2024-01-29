@@ -12,7 +12,6 @@ body{
 
     h1{
         @include texto(center, 'cursive', $color-fuente,50px);
-        background-color:beige;
         font-weight: 100;
         margin-top: 0%;
     }
@@ -24,24 +23,22 @@ body{
         @include texto(center, Arial,blueviolet,30px);
     }
     h4{
-        @include texto(center, 'Cambria' 'Cochin' 'Georgia' 'Times' 'Times New Roman' 'serif', $color-fuente,50px);  
+        @include texto(center, 'Cambria' 'Cochin' 'Georgia' 'Times' 'Times New Roman' 'serif', $color-fuente,50px);
     }
-    .imagenes-danza{
-        
-        text-align: center;
-    }
+        .imagenes-danza{
+            text-align: center;
+        }
+        .link-anuncio{
 
-    .link-anuncio{
-
-        text-align: center;
-        font-size: 35px;
-    }  
+            text-align: center;
+            font-size: 35px;
+        }  
 
     p{
-        @include texto(left,italic, $color-fuente,20px);  
+        @include texto(left,italic, $color-fuente,20px);
     }
     a{
-        @include texto(center,'Cambria' 'Cochin' 'Georgia' 'Times' 'Times New Roman' 'serif',#ffb1a5,30px);  
+        @include texto(center,'Cambria' 'Cochin' 'Georgia' 'Times' 'Times New Roman' 'serif',#ffb1a5,30px);
         text-decoration: none;
     }
 }

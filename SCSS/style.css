@@ -1,3 +1,4 @@
+/*----components----*/
 body {
   margin: 0;
   background: linear-gradient(to bottom, bisque, beige);
@@ -7,7 +8,6 @@ body h1 {
   font-family: "cursive";
   color: #c98cd2;
   font-size: 50px;
-  background-color: beige;
   font-weight: 100;
   margin-top: 0%;
 }
@@ -64,27 +64,30 @@ header {
 header #pagetop {
   -webkit-text-fill-color: #6c6a01;
   margin-top: 0%;
+  background-color: bisque;
 }
 
-section {
-  background: beige;
-}
+/*----utilities----*/
 section #p1 {
   text-align: center;
   color: #6c6a01;
   font-size: 36px;
 }
 section #p2 {
+  text-align: left;
+  color: blueviolet;
   font-size: 26px;
   position: relative;
   justify-self: auto;
 }
-section #lista {
+
+#lista {
+  text-align: left;
   color: #282A35;
+  font-size: 16px;
   position: relative;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   justify-content: center;
-  font-size: 16px;
 }
 
 footer {
@@ -110,7 +113,7 @@ footer {
   z-index: 2;
 }
 #navmenu .ga-nav {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", "serif";
   font-size: 18px;
   color: #c98cd2;
 }
