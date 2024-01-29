@@ -14,16 +14,56 @@ body{
         @include texto(center, 'cursive', $color-fuente,50px);
         font-weight: 100;
         margin-top: 0%;
+        font-weight: bold;
     }
     h2{
         
         @include texto(center,'Trebuchet MS' 'Lucida Sans Unicode' 'Lucida Grande' 'Lucida Sans' 'Arial' 'sans-serif', $color-fuente,40px);
     }
     h3{
-        @include texto(center, Arial,blueviolet,30px);
+        @include texto(center, Arial,#BE10AE,30px);
+        margin: 1%;
+
     }
     h4{
         @include texto(center, 'Cambria' 'Cochin' 'Georgia' 'Times' 'Times New Roman' 'serif', $color-fuente,50px);
+    }
+
+    .section-clases{
+
+        margin: 40px;
+        border: 2px solid black;
+        border-radius: 3px;
+        display: flex;
+        box-shadow: 1px 2px 30px 5px black;
+        -webkit-box-shadow: 1px 2px 30px 5px black;
+        -moz-box-shadow: 1px 2px 30px 5px black;
+        .imagen-clases{
+
+
+            padding: 30px;
+            justify-self:center;
+
+        }
+        .clases2 {
+
+            @extend .imagen-clases;
+
+            .titulo-clases{
+                
+                @extend h3;
+                line-height:normal;
+                text-align: left;
+
+            }
+        }
+        .p-clases{
+
+            margin-top: 15px;
+            width: 90%;
+            text-align: left;
+
+        }
     }
         .imagenes-danza{
             text-align: center;
